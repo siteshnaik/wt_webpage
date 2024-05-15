@@ -1,0 +1,96 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('img/webpage_background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 0;
+}
+
+/* Styling the navigation bar */
+nav {
+  background-color: #414141;
+  color: white;
+  text-align: right;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.5s ease;
+}
+
+nav a:hover {
+  background-color: #0056b3; /* Changing background color on hover */
+}
+
+/* Styling the main content */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+  color: white;
+}
+
+/* Styling the footer */
+footer {
+  background-color: #414141;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Styling the login form */
+.login-form {
+  max-width: 500px;
+  margin: 20px ;
+  padding: 35px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  float: left;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="submit"] {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-form input[type="submit"] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red; /* Make the error message visible */
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.change-bg-button {
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+  <style>
+    ul {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* ul li {
+      background: #353232;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    } */
+
+    #toggleButton {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    #toggleButton:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="login.html">Login</a>
+  </nav>
+
+  <div class="container">
+    <section>
+      <h2>Our Services</h2>
+      <button id="toggleButton">Toggle Services</button>
+      <ul>
+        <li>Web Design</li>
+        <li>Graphic Design</li>
+        <li>Digital Marketing</li>
+        <li>Content Writing</li>
+        <li>SEO Services</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 My Website. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function(){
+      $("#toggleButton").click(function(){
+        $("ul").slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>
